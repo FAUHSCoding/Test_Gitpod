@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My Socials</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0daa30b3d0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/ZachLTech/LinkTreeClone/main/favicon.ico">
+    <script src="https://raw.githubusercontent.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.js" crossorigin="anonymous"></script>
+  </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #000000;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    width: 30em;
+}
+.head__section img{
+    display: block;
+    margin: 0 auto;
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.head__section p{
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.social__links ul li{
+    height: 60px;
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 0.4rem 0.8rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 0px );
+    border-radius: 5px;
+    transition: background 0.25s;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.js-tilt-glare{
+    border-radius: 5px;
+}
+.social__links ul li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 1rem;
+}
+.social__links ul li a i{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.4) translateZ(50px);
+    transition: 0.25s;
+}
+.social__links ul li a span{
+    line-height: 1.4rem;
+}
+.social__links ul .instagram:hover{
+    background: #007c06;
+}
+.social__links ul .youtube:hover{
+    background: #FF0000;
+}
+.social__links ul .telegram:hover{
+    background:#0088cc;
+}
+.social__links ul .github:hover{
+    background: #333;
+} 
+.social__links ul .menu:hover{
+    background: #181425;
+} 
+.social__links ul .insta:hover:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+
+.social__links ul .discord:hover:hover{
+    background: #7289DA;
+} 
+@media (max-width: 1000px) {
+    body {
+        zoom: 170%;
+    }
+    .social__links ul li a span{
+        line-height: 3rem;
+    }
+    .gmail{
+        margin-left: 85%;
+    }
+    .share-button{
+        zoom: 70%;
+        padding: 10px;
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        color: #777;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        text-decoration: none;
+        white-space: nowrap;
+        border-radius: 50px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+      .iconsmargin{
+        margin-left: 80%;
+    }
+    .iconsmargindiscord{
+        margin-left: 79%
+    }
+    #summary{
+        font-size: 1.5rem;
+    }
+}
+
+.logo{
+    width: 3em;
+    height: auto;
+}
+.gmail{
+    margin-left: 82.65%;
+}
+.iconsmargin{
+    margin-left: 85%;
+}
+.iconsmargindiscord{
+    margin-left: 84%
+}
+
+
+.share-button{
+    background: transparent;
+    padding: 10px;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    color: #777;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 50px;
+    border: 2px solid #777;
+    cursor: pointer;
+  }
+</style>
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="head__section" style="display: flex; flex-direction: column;">
+    <img src="https://raw.githubusercontent.com/ZachLTech/LinkTreeClone/main/myLogo.png" style="height: 6.5em; width: 6.5em;" class="logo" alt="Logo">
+    <div style="position: absolute;">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script>
+        function copyToClipboard() {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val("https://www.zachl.space").select();
+        document.execCommand("copy");
+        $temp.remove();
+          
+        textSummary = document.getElementById("summary");
+        textSummary.innerHTML = "Copied to Clipboard."
+
+        setTimeout(function(){textSummary.innerHTML = ("I'm a freelance front-end web developer & software engineer")}, 1200);
+      }
+      
+      VanillaTilt.init(document.querySelectorAll(".social__links ul li"), {
+		max: 10,
+		speed: 800,
+        glare: true,
+        "max-glare": 1
+	});
+
+      </script>
+      
+      <svg class="hidden" style="width: 20px; height: 20px;">
+        <defs>
+          <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></symbol>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <div class="social__links">
+    <ul id="item">
+      <li class="instagram"><a href="https://github.com/ZachLTech">
+        
+          <span>
+            <h3 style="text-align: center;">Zach Lopez</h3>
+          </span>
+          
+        </a></li>
+
+
+    </ul>
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
